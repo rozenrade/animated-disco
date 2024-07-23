@@ -23,28 +23,35 @@
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./assets/js/app.js"></script>
   </head>
   <body>
     <header>
-      <nav class="nav-top">
-        <img src="./assets/img/logo-sap.png" alt="logo" class="logo" />
+      <nav class="nav-top anim-nav">
+        <img src="./assets/img/logo-rest.png" alt="logo" class="logo" />
         <ul class="nav-ul">
           <li>
-            <a href="#" class="underline">Accueil</a>
+            <a href="./index.html" class="underline home">ACCUEIL</a>
           </li>
-          <li><a href="#" class="underline">La carte</a></li>
+          <li><a href="./menue.html" class="underline">LA CARTE</a></li>
           <li>
-            <a href="#" class="underline">Le restaurant</a>
-          </li>
-          <li>
-            <a href="#" class="underline">Nous trouver</a>
+            <a href="./restaurant.html" class="underline">LE RESTAURANT</a>
           </li>
           <li>
-            <a href="#" class="underline">Privatisation</a>
+            <a href="./find-us.html" class="underline">NOUS TROUVER</a>
           </li>
-          <li><a href="#" class="underline">Nos actus</a></li>
           <li>
-            <a href="#" class="underline">Rejoignez-nous</a>
+            <a href="#" class="underline">PRIVATISATION</a>
+          </li>
+          <li><a href="#" class="underline">NOS ACTUS</a></li>
+          <li>
+            <a href="#" class="underline">REJOIGNEZ-NOUS</a>
           </li>
         </ul>
         <div class="btn">
@@ -160,7 +167,7 @@
       </div>
 
       <p class="orange">Actualités</p>
-      <p>DES BISTROTS PAS PARISIENS</p>
+      <p class="lora">DES BISTROTS PAS PARISIENS</p>
       <div class="container">
         <div class="card">
           <div class="img-border">
@@ -170,13 +177,13 @@
               class="card-picture"
             />
           </div>
-          <p class="img-caption">
+          <p class="img-caption work-sans">
             26 MARS 2024 <span class="tiret-orange">-</span> NON CLASSÉ
-            MICHELINE - Ouverture prochaine !
           </p>
-          <button class="read">Lire</button>
+          <p class="work-sans-heavy">MICHELINE - Ouverture prochaine !</p>
+          <button class="read"><a href="">Lire</a></button>
         </div>
-        <div class="card">
+        <div class="card card-middle">
           <div class="img-border">
             <img
               src="./assets/img/pas-parisiens-tata-yoyo.jpg"
@@ -184,11 +191,13 @@
               class="card-picture"
             />
           </div>
-          <p class="img-caption">
-            12 MARS 2024 <span class="tiret-orange">-</span> NON CLASSÉ Bistrot
-            Tata Yoyo - le petit dernier de la famille !
+          <p class="img-caption work-sans">
+            12 MARS 2024 <span class="tiret-orange">-</span> NON CLASSÉ
           </p>
-          <button class="read">Lire</button>
+          <p class="work-sans-heavy">
+            Bistrot Tata Yoyo - le petit dernier de la famille !
+          </p>
+          <button class="read"><a href="">Lire</a></button>
         </div>
         <div class="card">
           <div class="img-border">
@@ -198,51 +207,73 @@
               class="card-picture"
             />
           </div>
-          <p class="img-caption">
-            1 AOUT 2023 <span class="tiret-orange">-</span> NON CLASSÉ COCO
-            ROCCO - L'Italie à 10 minutes de la Porte Maillot !
+          <p class="img-caption work-sans">
+            1 AOUT 2023 <span class="tiret-orange">-</span> NON CLASSÉ
           </p>
-          <button class="read">Lire</button>
+          <p class="work-sans-heavy">
+            COCO ROCCO - L'Italie à 10 minutes de la Porte Maillot !
+          </p>
+
+          <button class="read"><a href="">Lire</a></button>
         </div>
       </div>
+
+      <footer>
+        <div class="footer-top">
+          <img
+            src="./assets/img/bistrots-pas-parisiens-restaurant-nobert-tarayre-1.png"
+            alt=""
+            class="bistrot-footer"
+          />
+          <div class="text-footer">
+            <p class="white">SAPERLIPOPETTE!</p>
+            <p class="grey">01 41 37 00 00</p>
+            <p class="grey">
+              Nous trouver © 2019 - Mentions Légales - CGU - Agence web 24 rue
+              Mars et Roty Puteaux, 92800 France
+            </p>
+          </div>
+          <div class="right-footer">
+            <p class="white">NOUS SUIVRE</p>
+            <div class="group-img-footer">
+              <img
+                src="./assets/img/facebook.png"
+                alt="facebook"
+                class="img-footer"
+              />
+
+              <img
+                src="./assets/img/instagram.png"
+                alt="instagram"
+                class="img-footer instagram"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="carousel-container">
+            <div class="carousel">
+              <img src="./assets/img/.png" alt="" class="carousel-image" />
+              <img src="./assets/img/b.png" alt="" class="carousel-image" />
+              <img src="./assets/img/c.png" alt="" class="carousel-image" />
+              <img src="./assets/img/e.png" alt="" class="carousel-image" />
+              <img src="./assets/img/f.png" alt="" class="carousel-image" />
+              <img src="./assets/img/g.png" alt="" class="carousel-image" />
+              <img src="./assets/img/h.png" alt="" class="carousel-image" />
+              <img src="./assets/img/i.png" alt="" class="carousel-image" />
+              <img src="./assets/img/j.png" alt="" class="carousel-image" />
+              <img src="./assets/img/k.png" alt="" class="carousel-image" />
+              <img src="./assets/img/l.png" alt="" class="carousel-image" />
+              <img src="./assets/img/o.png" alt="" class="carousel-image" />
+              <img src="./assets/img/q.png" alt="" class="carousel-image" />
+              <img src="./assets/img/t.png" alt="" class="carousel-image" />
+            </div>
+          </div>
+          <p class="infos">DES BISTROS PAS PARISIENS</p>
+        </div>
+      </footer>
     </main>
 
-    <!--<footer>
-      <div class="foot-green">
-        <img src="" alt="" class="bistrot" />
-        <p>SAPERLIPOPETTE!</p>
-        <p>01 41 37 00 00</p>
-        <p>
-          Nous trouver © 2019 - Mentions Légales - CGU - Agence web 24 rue Mars
-          et Roty Puteaux, 92800 France
-        </p>
-        <p>NOUS SUIVRE</p>
-        <img src="" alt="facebook" />
-        <img src="" alt="instagram" />
-      </div>
-      <div class="container">
-        <div class="carousel-slide">
-          <div class="carousel-item">
-            <img src="" alt="" class="carousel-img" />
-          </div>
-          <div class="carousel-item">
-            <img src="" alt="" class="carousel-img" />
-          </div>
-          <div class="carousel-item">
-            <img src="" alt="" class="carousel-img" />
-          </div>
-          <div class="carousel-item">
-            <img src="" alt="" class="carousel-img" />
-          </div>
-          <div class="carousel-item">
-            <img src="" alt="" class="carousel-img" />
-          </div>
-          <div class="carousel-item">
-            <img src="" alt="" class="carousel-img" />
-          </div>
-        </div>
-      </div>
-    </footer> -->
-    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/component/carousel.js"></script>
   </body>
 </html>

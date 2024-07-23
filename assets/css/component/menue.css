@@ -1,0 +1,181 @@
+/* .img-wallpaper-top {
+} */
+.text-hover-top {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top-page img {
+  width: 100%;
+}
+
+.content-food {
+  display: flex;
+  flex-direction: column;
+  margin: 150px;
+}
+.boissons {
+  background-color: #283636;
+  text-align: center;
+  padding-top: 60px;
+  width: 1175px;
+  height: 187px;
+}
+
+.boissons,
+.menu,
+.kid,
+.wine p {
+  font-family: "Work Sans", sans-serif;
+  color: white;
+}
+.menu p {
+  margin-top: 40px;
+}
+.menu-title {
+  font-size: 35px;
+}
+.menu {
+  margin-top: 100px;
+  background-color: #283636;
+  text-align: center;
+  padding-top: 60px;
+  width: 1175px;
+  height: 686px;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.smol {
+  font-size: 16px;
+}
+.first-h5 {
+  margin-top: 60px;
+}
+h5 {
+  margin-top: 30px;
+  font-size: 12px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: normal;
+}
+
+.apero,
+.entree,
+.plats {
+  display: flex;
+}
+
+.apero,
+.entree,
+.plats img {
+  width: 445px;
+  height: 539px;
+  margin-left: 150px;
+}
+
+.txt-align-right {
+  margin-top: 70px;
+  margin-left: 30px;
+  text-align: left;
+}
+
+.price {
+  display: flex;
+  position: relative;
+  width: 700px;
+  margin-top: 25px;
+}
+
+.price p {
+  right: 0%;
+  position: absolute;
+}
+
+.food-desc {
+  width: 600px;
+  padding-bottom: 25px;
+  border-bottom: #283636 dotted 1px;
+}
+
+.entree {
+  margin-top: 150px;
+  height: 820px;
+  display: flex;
+}
+
+.entree img {
+  width: 532px;
+  height: 785px;
+}
+
+.plats {
+  width: 560px;
+  height: 1650px;
+}
+.plats img {
+  margin-top: 100%;
+}
+
+.desserts {
+  display: flex;
+}
+.desserts-img {
+  display: flex;
+  flex-direction: column;
+}
+
+.dessert-1 {
+  width: 445px;
+  height: 656px;
+}
+.dessert-2 {
+  width: 445px;
+  height: 288px;
+}
+
+.wine {
+  background-color: #283636;
+  padding: 50px;
+}
+
+.wine p {
+  margin: 30px;
+}
+.kid {
+  margin-top: 150px;
+  background-color: #283636;
+  position: relative;
+}
+
+.kid p {
+  margin: 30px 0;
+}
+
+.mb-bot {
+  padding-bottom: 150px;
+}
+
+.smol p {
+  margin: 500px;
+}
+
+.warning {
+  position: absolute;
+  left: 2%;
+  bottom: 2%;
+}
+.informations {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 100px;
+}
+
+.bold {
+  font-weight: 700;
+}
