@@ -1,0 +1,78 @@
+.logo {
+  width: 150px;
+}
+ul {
+  border: black 2px solid;
+  list-style-type: none;
+  text-align: center;
+  margin-left: 20%;
+  width: 45%;
+}
+
+li {
+  display: inline-block;
+}
+
+.nav-ul li .underline {
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+.nav-ul li .underline:hover {
+  transition: all ease-out 0.3s;
+  color: #fe7207;
+}
+.nav-ul li .underline::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fe7207;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-top {
+  background-color: #3e5556;
+  position: relative;
+}
+
+.nav-ul li .underline:hover::before {
+  transform: scaleX(1);
+}
+nav {
+  border: 2px solid black;
+  align-items: center;
+  display: flex;
+}
+.btn {
+  display: flex;
+  position: absolute;
+
+  right: 2%;
+}
+
+.margin {
+  margin-left: 10px;
+}
+
+.height {
+  padding: 10px;
+  border: white solid 2px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+.height:hover {
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  transition: all ease-out 0.3s;
+}
+
+nav {
+  position: absolute;
+}
