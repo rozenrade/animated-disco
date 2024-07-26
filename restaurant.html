@@ -3,6 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,32 +56,43 @@
   <body>
     <header>
       <nav class="nav-top anim-nav">
-        <img src="./assets/img/logo-rest.png" alt="logo" class="logo" />
-        <ul class="nav-ul">
-          <li>
-            <a href="./index.html" class="underline home">ACCUEIL</a>
-          </li>
-          <li><a href="./menue.html" class="underline">LA CARTE</a></li>
-          <li>
-            <a href="./restaurant.html" class="underline">LE RESTAURANT</a>
-          </li>
-          <li>
-            <a href="./find-us.html" class="underline">NOUS TROUVER</a>
-          </li>
-          <li>
-            <a href="#" class="underline">PRIVATISATION</a>
-          </li>
-          <li><a href="#" class="underline">NOS ACTUS</a></li>
-          <li>
-            <a href="#" class="underline">REJOIGNEZ-NOUS</a>
-          </li>
-        </ul>
+        <a href="./index.html">
+          <img src="./assets/img/logo-rest.png" alt="logo" class="logo" />
+        </a>
+        <div class="container-struct">
+          <ul class="nav-ul">
+            <li>
+              <a href="./index.html" class="underline home">ACCUEIL</a>
+            </li>
+            <li><a href="./menue.html" class="underline">LA CARTE</a></li>
+            <li>
+              <a href="./restaurant.html" class="underline">LE RESTAURANT</a>
+            </li>
+            <li>
+              <a href="./find-us.html" class="underline">NOUS TROUVER</a>
+            </li>
+            <li>
+              <a href="#" class="underline">PRIVATISATION</a>
+            </li>
+            <li><a href="#" class="underline">NOS ACTUS</a></li>
+            <li>
+              <a href="#" class="underline">REJOIGNEZ-NOUS</a>
+            </li>
+          </ul>
+        </div>
         <div class="btn">
           <button class="height">
-            <img src="./assets/img/gift-icon.png" alt="gift" />Coffrets cadeaux
+            <div id="img-container">
+              <img src="./assets/img/gift-icon.png" alt="gift" />
+              <p>
+                Coffrets <br />
+                cadeaux
+              </p>
+            </div>
           </button>
-
-          <button class="height margin">Réservations</button>
+          <button class="height margin">
+            <p>Réservations</p>
+          </button>
         </div>
       </nav>
     </header>
@@ -72,22 +104,24 @@
         />
         <h1 class="orange text-hover-top">Le restaurant</h1>
       </div>
-      <div class="paragraphe-desc">
-        <p>
-          C’est à quelques pas du Bois de Boulogne et de la Porte Maillot que se
-          situe ce bistrot aux couleurs sobres et distinguées.
-        </p>
-        <p>
-          Véritable institution de la ville de Puteaux, le Saperlipopette est
-          conçu comme un bistrot chic mariant différents styles : objets chinés,
-          vieux livres, matières confortables, sans oublier cet escalier en
-          acier dès l’entrée, le tout dans une atmosphère conviviale et
-          chaleureuse.
-        </p>
-        <p>
-          Et saperlipopette, j’oubliais ! La terrasse ensoleillée vaut le détour
-          toute l’année.
-        </p>
+      <div class="container-struct">
+        <div class="paragraphe-desc">
+          <p>
+            C’est à quelques pas du Bois de Boulogne et de la Porte Maillot que
+            se situe ce bistrot aux couleurs sobres et distinguées.
+          </p>
+          <p>
+            Véritable institution de la ville de Puteaux, le Saperlipopette est
+            conçu comme un bistrot chic mariant différents styles : objets
+            chinés, vieux livres, matières confortables, sans oublier cet
+            escalier en acier dès l’entrée, le tout dans une atmosphère
+            conviviale et chaleureuse.
+          </p>
+          <p>
+            Et saperlipopette, j’oubliais ! La terrasse ensoleillée vaut le
+            détour toute l’année.
+          </p>
+        </div>
       </div>
       <div class="container-gallery">
         <div class="card-gallery">
@@ -285,33 +319,39 @@
       </div>
       <footer>
         <div class="footer-top">
-          <img
-            src="./assets/img/bistrots-pas-parisiens-restaurant-nobert-tarayre-1.png"
-            alt=""
-            class="bistrot-footer"
-          />
-          <div class="text-footer">
-            <p class="white">SAPERLIPOPETTE!</p>
-            <p class="grey">01 41 37 00 00</p>
-            <p class="grey">
-              Nous trouver © 2019 - Mentions Légales - CGU - Agence web 24 rue
-              Mars et Roty Puteaux, 92800 France
-            </p>
-          </div>
-          <div class="right-footer">
-            <p class="white">NOUS SUIVRE</p>
-            <div class="group-img-footer">
-              <img
-                src="./assets/img/facebook.png"
-                alt="facebook"
-                class="img-footer"
-              />
+          <div class="container-struct">
+            <div class="footer-struct">
+              <div class="left-footer">
+                <img
+                  src="./assets/img/bistrots-pas-parisiens-restaurant-nobert-tarayre-1.png"
+                  alt=""
+                  class="bistrot-footer"
+                />
+              </div>
+              <div class="middle-footer">
+                <p class="white">SAPERLIPOPETTE!</p>
+                <p class="grey">01 41 37 00 00</p>
+                <p class="grey">
+                  Nous trouver © 2019 - Mentions Légales - CGU - Agence web 24
+                  rue Mars et Roty Puteaux, 92800 France
+                </p>
+              </div>
+              <div class="right-footer">
+                <p class="white">NOUS SUIVRE</p>
+                <div class="group-img-footer">
+                  <img
+                    src="./assets/img/facebook.png"
+                    alt="facebook"
+                    class="img-footer"
+                  />
 
-              <img
-                src="./assets/img/instagram.png"
-                alt="instagram"
-                class="img-footer instagram"
-              />
+                  <img
+                    src="./assets/img/instagram.png"
+                    alt="instagram"
+                    class="img-footer instagram"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

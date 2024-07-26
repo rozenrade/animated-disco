@@ -10,14 +10,9 @@
   width: 100%;
 }
 
-.paragraphe-desc {
-  display: flex;
-  flex-direction: column;
-}
-
 .paragraphe-desc p {
   text-align: center;
-  margin: 15px 640px;
+  width: 100%;
 }
 
 .card-gallery img {

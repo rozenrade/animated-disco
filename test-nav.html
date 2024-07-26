@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Burger</title>
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 10px 20px;
+      }
+
+      .logo {
+        color: #fff;
+        font-size: 24px;
+        text-transform: uppercase;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+      }
+
+      .nav-links li {
+        margin-left: 20px;
+      }
+
+      .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      .burger {
+        display: none;
+        cursor: pointer;
+      }
+
+      .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px;
+        transition: all 0.3s ease;
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+        }
+
+        .nav-links li {
+          text-align: center;
+          margin: 15px 0;
+        }
+
+        .burger {
+          display: block;
+        }
+      }
+
+      .nav-active {
+        display: flex !important;
+      }
+
+      .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+
+      .toggle .line2 {
+        opacity: 0;
+      }
+
+      .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+
+      .menu-container {
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        color: #333;
+      }
+    </style>
+    <nav class="navbar">
+      <div class="logo">Menu Burger</div>
+      <ul class="nav-links">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Burgers</a></li>
+        <li><a href="#">Accompagnements</a></li>
+        <li><a href="#">Desserts</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <div class="menu-container">
+      <h1>Bienvenue au Menu Burger</h1>
+      <!-- Contenu du menu burger -->
+    </div>
+
+    <script>
+      const burger = document.querySelector(".burger");
+      const nav = document.querySelector(".nav-links");
+      const navLinks = document.querySelectorAll(".nav-links li");
+
+      burger.addEventListener("click", () => {
+        // Toggle Nav
+        nav.classList.toggle("nav-active");
+
+        // Animate Links
+        navLinks.forEach((link, index) => {
+          if (link.style.animation) {
+            link.style.animation = "";
+          } else {
+            link.style.animation = `navLinkFade 0.5s ease forwards ${
+              index / 7 + 0.3
+            }s`;
+          }
+        });
+
+        // Burger Animation
+        burger.classList.toggle("toggle");
+      });
+    </script>
+  </body>
+</html>
+
+<style>
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  :root {
+    --content-width: 100px;
+  }
+  #app-container {
+    min-height: 100%;
+    overflow-x: hidden;
+  }
+  /*
+  conteneur structurel
+  etablissant la zone de contenu
+*/
+  .container-struct {
+    width: var(--content-width);
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /*
+  conteneur en ligne pleine largeur 100%
+*/
+  .container-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  /*
+  conteneur colonne pleine largeur 100%
+*/
+  .container-col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
