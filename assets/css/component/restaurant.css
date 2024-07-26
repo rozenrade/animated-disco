@@ -1,0 +1,44 @@
+.text-hover-top {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top-background img {
+  height: 340px;
+  width: 100%;
+}
+
+.paragraphe-desc p {
+  text-align: center;
+  width: 100%;
+}
+
+.card-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 2s;
+}
+
+.card-gallery:hover img {
+  transform: scale(1.2);
+}
+
+.card-gallery {
+  overflow: hidden;
+  width: 315px;
+  height: 400px;
+  margin: 10px 0px;
+}
+
+.container-gallery {
+  width: 1400px;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
